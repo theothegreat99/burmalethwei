@@ -1,0 +1,22 @@
+/* Burma Lethwei — Toungoo manuscript-inspired visual theme */
+:root{--r:#87301e;--r2:#a64c27;--bg:#e8cc91;--ink:#29180f;--paper:#efd9a7;--gold:#b98743;--deep:#482716}
+body{background-color:var(--bg);background-image:radial-gradient(ellipse at 15% 5%,#fff1c466,transparent 45%),radial-gradient(ellipse at 90% 65%,#8b3d2524,transparent 52%),repeating-linear-gradient(0deg,#45230c08 0 1px,transparent 1px 5px);font-family:'Noto Sans','Noto Sans Myanmar','Noto Sans Thai',sans-serif}
+h1,h2,h3,.f,.tile{font-family:'Cinzel','Noto Sans Myanmar',Georgia,serif}
+header{background:#ead3a3f5;border-bottom:5px double var(--deep);padding:12px 5vw;box-shadow:0 4px 14px #2c160b25}
+header::before{content:'';position:absolute;inset:0 0 auto;height:5px;background:repeating-linear-gradient(90deg,var(--deep) 0 12px,var(--gold) 12px 18px,var(--r) 18px 22px)}
+nav{gap:22px;font-family:'Cinzel',Georgia,serif;letter-spacing:.02em;text-transform:none}nav a{padding:8px 0;border-bottom:2px solid transparent}nav a:hover{color:var(--r);border-bottom-color:var(--gold)}
+.logo img{width:64px;height:64px;object-fit:contain}select{border:1px solid var(--gold);border-radius:2px;background:#f1deb1}
+section{max-width:1320px}.hero{min-height:76vh;gap:40px}.hero>div:first-child{background:linear-gradient(110deg,#4b2819f2,#6a3924ec);padding:clamp(24px,4vw,60px);border:8px double #b78442;box-shadow:0 12px 32px #3c210d4a;color:#f5db9f;position:relative}.hero>div:first-child::before{content:'❖';position:absolute;top:10px;right:18px;color:var(--gold);font-size:28px}
+.eyebrow{color:#e2bb75;letter-spacing:.23em}h1{font-size:clamp(48px,7vw,94px);color:#f7dc9f;text-shadow:2px 3px #1b0e08}h1 em{color:#e9b765}.my{color:#f3d69c}.tag{color:#ead4a7;letter-spacing:.07em}
+.btn{transform:none;border:1px solid #b98544;background:#ead09a;color:var(--deep);font-family:'Cinzel',Georgia,serif;box-shadow:3px 3px 0 #24120c;border-radius:1px}.btn.p{background:#8b301e;color:#f6dfad;border-color:#e2b26a}.btn:hover{transform:translateY(-3px)}
+.art{min-height:400px;background:radial-gradient(circle,#f4dca4 0 34%,#c39456 35% 36%,transparent 37%),repeating-radial-gradient(circle,#6c3e1910 0 2px,transparent 2px 10px);border:8px double #8e6035;box-shadow:inset 0 0 30px #663b253b}.art::before{background:var(--gold);opacity:.12}.art img{max-width:430px}
+.tiles{border-top:5px double var(--deep);gap:14px;padding-top:24px}.tile{background:#efdaa9;border:1px solid #986d3d;box-shadow:3px 3px 0 #6b4225;padding:16px;color:var(--deep);font-size:14px;letter-spacing:.02em}.tile:hover{background:#e2c58d}.tile .ic{filter:sepia(1) saturate(1.5)}
+section:not(.hero){border-top:1px solid #8e5e3770}.h{color:#4c2618}.h::after{height:4px;background:var(--gold);filter:none;transform:none}.lead{color:#4a2b1d}
+.c{background:linear-gradient(135deg,#f4e1b6,#e6c68d);border:1px solid #9a693e;border-radius:1px;box-shadow:5px 5px 0 #6a432a;padding:25px}.c::before{background:radial-gradient(#a9713722,transparent 65%);filter:none}.c:hover{box-shadow:7px 7px 0 var(--r)}.c h3{color:#542719}.rl::before{color:var(--r);text-shadow:none;font-family:'Cinzel',serif}
+.pic{border-radius:1px;border:4px double #764a2b;background:radial-gradient(circle at 50% 110%,#b7834c,transparent 68%),repeating-linear-gradient(45deg,#673c1910 0 1px,transparent 1px 12px),#efd7a5}.pic::after{background:var(--deep);filter:none}
+.soon{border:5px double #85532d;border-radius:0;background:linear-gradient(130deg,#ead0a0,#d4ac70)}.badge{background:var(--r);color:#f4dfb0;border-radius:1px;animation:none}.lock i{border-radius:0;background:linear-gradient(90deg,#c39656,#8a3420,#c39656)}
+footer{background:#482817;color:#f0d9a9;border-top:7px double #b18449}footer .lead{color:#f0d9a9}.cof{background:#562d1b;color:#f4dca4;border-radius:2px;box-shadow:3px 3px 0 #b58b4f}
+.sp{display:none} .rv{transition:opacity .5s,transform .5s}
+@media(max-width:900px){header{padding:8px 4vw}.hero{gap:20px}.hero>div:first-child{padding:26px}.art{min-height:300px}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.tiles{grid-template-columns:1fr}.tile{padding:12px}.hero{padding-top:22px}h1{font-size:clamp(45px,13vw,70px)}.my{font-size:32px}.art{min-height:250px}.art img{max-width:85%}.btn{margin-bottom:10px}.h{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
